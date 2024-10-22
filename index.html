@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Compras</title>
+        <link rel="stylesheet" href="src/style/style.css">
+    </head>
+    <body class>
+        <header class="wrapper header-page">
+            <img src="assets/images/header.png" alt="bakcground">
+        </header>
+        <main class="wrapper">
+            <div class="container">
+                <form id="form">
+
+                    <h1>Lista de Compras</h1>
+                    <div class="inputs">
+                        <label for="item">
+                            <span>Item</span>
+                            <input type="text" name="item" id="item">
+                        </label>
+                        <label for="qnt">
+                            <span>Quantidade</span>
+                            <div id="select-qnt">
+                                <input type="text" name="qnt" id="qnt">
+                                <select name="tipo" id="tipo">
+                                    <option value="unidade">Un.</option>
+                                    <option value="quilos">Kg.</option>
+                                    <option value="litros">L</option>
+                                </select>
+                            </div>
+                        </label>
+                        <label for="categoria">
+                            <span>Categoria</span>
+                            <select name="categoria" id="categoria">
+                                <option value>Selecione</option>
+                                <option value="padaria">Padaria</option>
+                                <option value="legume">Legume</option>
+                                <option value="carne">Carne</option>
+                                <option value="fruta">Fruta</option>
+                                <option value="bebida">Bebida</option>
+                            </select>
+                        </label>
+                        <button class="btn-add">+</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container resultado">
+
+            </div>
+        </main>
+        <footer></footer>
+
+        <script src="src/script/script.js"></script>
+    </body>
+</html>
